@@ -235,6 +235,7 @@ ul {
 .horizontal-products-list .card-body {
     /* background-color: aliceblue; */
     margin: 1.5rem;
+    padding-left: 15px;
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 320px;
