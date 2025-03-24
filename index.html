@@ -38,38 +38,89 @@
                     /></a>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a
-                                class="nav-link active"
-                                aria-current="page"
-                                href="#"
-                                >Home</a
-                            >
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#">Inicio</a>
                         </li>
+
+                        <!-- DROP ITEM -->
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Anillos de Compromiso
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Ver todos</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Ver clasicos</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Ver vanguardistas</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"
-                                >Anillos de Compromiso</a
+                            <a class="nav-link" href="#anchor-alliance"
+                                >Alianzas</a
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Alianzas</a>
+                            <a class="nav-link" href="#anchor-diamond"
+                                >Diamantes</a
+                            >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Anillos de Diseño</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Diamantes</a>
+                            <a class="nav-link" href="#anchor-designer-ring"
+                                >Anillos de Diseño</a
+                            >
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Joyas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Colecciones</a>
+                        <!-- DROP ITEM -->
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Collecciones
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Ver todos</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Ver limitadas</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Ver nuevas</a
+                                    >
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Citas</a>
+                            <a class="nav-link" href="#anchor-appointment"
+                                >Citas</a
+                            >
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Nosotros</a>
@@ -82,7 +133,7 @@
                             placeholder="Search"
                             aria-label="Search"
                         />
-                        <button class="btn button-gold" type="submit">
+                        <button class="btn button-black" type="submit">
                             Search
                         </button>
                     </form>
@@ -163,7 +214,19 @@
         </div>
         <!-- Productos principales -->
         <div class="main-products container-fluid">
-            <div class="row align-items-start">
+            <div class="row">
+                <div class="col title"><h2>Productos más solicitados</h2></div>
+            </div>
+
+            <div class="row">
+                <div class="col principal">
+                    <img
+                        class="sub-img"
+                        src="images/product-principal-frame-sub-img.png"
+                    />
+                </div>
+            </div>
+            <div class="row secondary">
                 <div class="col-12 col-lg-3 main-products-card">
                     <a href="#" target="_blank"
                         ><img src="images/principal-product-1.webp" alt=""
@@ -176,7 +239,7 @@
                             Praesent auctor felis in orci ultrices, quis
                             porttitor nisi vehicula
                         </p>
-                        <button type="button" class="btn button-gold">
+                        <button type="button" class="btn button-black">
                             Descubrelo!
                         </button>
                     </div>
@@ -185,41 +248,54 @@
                     <a href="#" target="_blank"
                         ><img src="images/principal-product-2.webp" alt=""
                     /></a>
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Ut vitae venenatis ligula, nec placerat ex. Praesent
-                        auctor felis in orci ultrices, quis porttitor nisi
-                        vehicula
-                    </p>
-                    <button type="button" class="btn button-gold">
-                        Descubrelo!
-                    </button>
+                    <div class="body-card">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut vitae venenatis ligula, nec placerat ex.
+                            Praesent auctor felis in orci ultrices, quis
+                            porttitor nisi vehicula
+                        </p>
+                        <button type="button" class="btn button-black">
+                            Descubrelo!
+                        </button>
+                    </div>
                 </div>
                 <div class="col-12 col-lg-3 main-products-card">
                     <a href="#" target="_blank"
                         ><img src="images/principal-product-3.webp" alt=""
                     /></a>
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Ut vitae venenatis ligula, nec placerat ex. Praesent
-                        auctor felis in orci ultrices, quis porttitor nisi
-                        vehicula
-                    </p>
-                    <button type="button" class="btn button-gold">
-                        Descubrelo!
-                    </button>
+                    <div class="body-card">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut vitae venenatis ligula, nec placerat ex.
+                            Praesent auctor felis in orci ultrices, quis
+                            porttitor nisi vehicula
+                        </p>
+                        <button type="button" class="btn button-black">
+                            Descubrelo!
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- horizontal-products-list -->
-        <div class="horizontal-products-list">
+        <div id="anchor-alliance"></div>
+        <div class="horizontal-products-list container-md">
             <div class="scroll-list-control">
+                <i
+                    id="horizontalScrollLeft1"
+                    class="bi bi-caret-left-square-fill"
+                ></i>
                 <h2>Alianzas</h2>
                 <img src="images/personalized-title-background.png" />
+                <i
+                    id="horizontalScrollRight1"
+                    class="bi bi-caret-right-square-fill"
+                ></i>
             </div>
-            <div class="scroll-list-panel">
+            <div id="horizontalScrollPanel1" class="scroll-list-panel">
                 <div class="card-body">
                     <div class="top-body">
                         <div class="discount">-5%</div>
@@ -230,7 +306,8 @@
                     <div class="bottom-body">
                         <div class="name">Denver</div>
                         <div class="price">
-                            Desde $835.170,00 <span>$890.555,00</span>
+                            Desde <span class="new-price">$835.170,00</span>
+                            <span class="old-price">$890.555,00</span>
                         </div>
                         <div class="quotas">6 Cuotas sin interés</div>
                         <div class="off">+30% OFF en Efectivo $584.619</div>
@@ -249,7 +326,8 @@
                     <div class="bottom-body">
                         <div class="name">Denver</div>
                         <div class="price">
-                            Desde $835.170,00 <span>$890.555,00</span>
+                            Desde <span class="new-price">$835.170,00</span>
+                            <span class="old-price">$890.555,00</span>
                         </div>
                         <div class="quotas">6 Cuotas sin interés</div>
                         <div class="off">+30% OFF en Efectivo $584.619</div>
@@ -268,7 +346,8 @@
                     <div class="bottom-body">
                         <div class="name">Denver</div>
                         <div class="price">
-                            Desde $835.170,00 <span>$890.555,00</span>
+                            Desde <span class="new-price">$835.170,00</span>
+                            <span class="old-price">$890.555,00</span>
                         </div>
                         <div class="quotas">6 Cuotas sin interés</div>
                         <div class="off">+30% OFF en Efectivo $584.619</div>
@@ -287,7 +366,8 @@
                     <div class="bottom-body">
                         <div class="name">Denver</div>
                         <div class="price">
-                            Desde $835.170,00 <span>$890.555,00</span>
+                            Desde <span class="new-price">$835.170,00</span>
+                            <span class="old-price">$890.555,00</span>
                         </div>
                         <div class="quotas">6 Cuotas sin interés</div>
                         <div class="off">+30% OFF en Efectivo $584.619</div>
@@ -306,7 +386,8 @@
                     <div class="bottom-body">
                         <div class="name">Denver</div>
                         <div class="price">
-                            Desde $835.170,00 <span>$890.555,00</span>
+                            Desde <span class="new-price">$835.170,00</span>
+                            <span class="old-price">$890.555,00</span>
                         </div>
                         <div class="quotas">6 Cuotas sin interés</div>
                         <div class="off">+30% OFF en Efectivo $584.619</div>
@@ -325,7 +406,8 @@
                     <div class="bottom-body">
                         <div class="name">Denver</div>
                         <div class="price">
-                            Desde $835.170,00 <span>$890.555,00</span>
+                            Desde <span class="new-price">$835.170,00</span>
+                            <span class="old-price">$890.555,00</span>
                         </div>
                         <div class="quotas">6 Cuotas sin interés</div>
                         <div class="off">+30% OFF en Efectivo $584.619</div>
@@ -344,7 +426,8 @@
                     <div class="bottom-body">
                         <div class="name">Denver</div>
                         <div class="price">
-                            Desde $835.170,00 <span>$890.555,00</span>
+                            Desde <span class="new-price">$835.170,00</span>
+                            <span class="old-price">$890.555,00</span>
                         </div>
                         <div class="quotas">6 Cuotas sin interés</div>
                         <div class="off">+30% OFF en Efectivo $584.619</div>
@@ -356,6 +439,7 @@
             </div>
         </div>
         <!-- personalized -->
+        <div id="anchor-diamond"></div>
         <div class="personalized container-fluid">
             <div class="row">
                 <div class="left-panel col-12 col-md-6">
@@ -385,12 +469,22 @@
             </div>
         </div>
         <!-- horizontal-products-list -->
-        <div class="horizontal-products-list">
+        <div id="anchor-designer-ring"></div>
+        <div class="horizontal-products-list container-md">
             <div class="scroll-list-control">
+                <i
+                    id="horizontalScrollLeft2"
+                    class="bi bi-caret-left-square-fill"
+                ></i>
+
                 <h2>Anillos</h2>
                 <img src="images/rings-title-background.png" />
+                <i
+                    id="horizontalScrollRight2"
+                    class="bi bi-caret-right-square-fill"
+                ></i>
             </div>
-            <div class="scroll-list-panel">
+            <div id="horizontalScrollPanel2" class="scroll-list-panel">
                 <div class="card-body">
                     <div class="top-body">
                         <div class="discount">-5%</div>
@@ -401,7 +495,8 @@
                     <div class="bottom-body">
                         <div class="name">Denver</div>
                         <div class="price">
-                            Desde $835.170,00 <span>$890.555,00</span>
+                            Desde <span class="new-price">$835.170,00</span>
+                            <span class="old-price">$890.555,00</span>
                         </div>
                         <div class="quotas">6 Cuotas sin interés</div>
                         <div class="off">+30% OFF en Efectivo $584.619</div>
@@ -420,7 +515,8 @@
                     <div class="bottom-body">
                         <div class="name">Denver</div>
                         <div class="price">
-                            Desde $835.170,00 <span>$890.555,00</span>
+                            Desde <span class="new-price">$835.170,00</span>
+                            <span class="old-price">$890.555,00</span>
                         </div>
                         <div class="quotas">6 Cuotas sin interés</div>
                         <div class="off">+30% OFF en Efectivo $584.619</div>
@@ -439,7 +535,8 @@
                     <div class="bottom-body">
                         <div class="name">Denver</div>
                         <div class="price">
-                            Desde $835.170,00 <span>$890.555,00</span>
+                            Desde <span class="new-price">$835.170,00</span>
+                            <span class="old-price">$890.555,00</span>
                         </div>
                         <div class="quotas">6 Cuotas sin interés</div>
                         <div class="off">+30% OFF en Efectivo $584.619</div>
@@ -458,7 +555,8 @@
                     <div class="bottom-body">
                         <div class="name">Denver</div>
                         <div class="price">
-                            Desde $835.170,00 <span>$890.555,00</span>
+                            Desde <span class="new-price">$835.170,00</span>
+                            <span class="old-price">$890.555,00</span>
                         </div>
                         <div class="quotas">6 Cuotas sin interés</div>
                         <div class="off">+30% OFF en Efectivo $584.619</div>
@@ -477,7 +575,8 @@
                     <div class="bottom-body">
                         <div class="name">Denver</div>
                         <div class="price">
-                            Desde $835.170,00 <span>$890.555,00</span>
+                            Desde <span class="new-price">$835.170,00</span>
+                            <span class="old-price">$890.555,00</span>
                         </div>
                         <div class="quotas">6 Cuotas sin interés</div>
                         <div class="off">+30% OFF en Efectivo $584.619</div>
@@ -496,7 +595,8 @@
                     <div class="bottom-body">
                         <div class="name">Denver</div>
                         <div class="price">
-                            Desde $835.170,00 <span>$890.555,00</span>
+                            Desde <span class="new-price">$835.170,00</span>
+                            <span class="old-price">$890.555,00</span>
                         </div>
                         <div class="quotas">6 Cuotas sin interés</div>
                         <div class="off">+30% OFF en Efectivo $584.619</div>
@@ -515,7 +615,8 @@
                     <div class="bottom-body">
                         <div class="name">Denver</div>
                         <div class="price">
-                            Desde $835.170,00 <span>$890.555,00</span>
+                            Desde <span class="new-price">$835.170,00</span>
+                            <span class="old-price">$890.555,00</span>
                         </div>
                         <div class="quotas">6 Cuotas sin interés</div>
                         <div class="off">+30% OFF en Efectivo $584.619</div>
@@ -527,6 +628,7 @@
             </div>
         </div>
         <!-- localization -->
+        <div id="anchor-appointment"></div>
         <div class="contact-and-map container-fluid">
             <div class="row container">
                 <div class="left-panel col-sm-12 col-md-6">
@@ -585,7 +687,7 @@
 
         <!-- footer -->
         <footer class="footer container-fluid">
-            <div class="row">
+            <div class="row container-sm">
                 <div class="panel col-sm-12 col-md-6 col-xxl-3">
                     <h3>Mauris vel</h3>
                     <ul>
@@ -647,6 +749,7 @@
                         class="input-gold"
                         placeholder="Correo Electronico"
                     />
+
                     <button class="btn button-black">Enviar</button>
                 </div>
             </div>
@@ -660,5 +763,6 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"
         ></script>
+        <script src="main.js"></script>
     </body>
 </html>
