@@ -131,7 +131,7 @@ ul {
 .nav-link {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
-    font-size: clamp(1rem, 1vw, 1.3rem);
+    font-size: 1rem;
     border-bottom: 1px solid transparent;
     transition: all 1s ease;
     -moz-transition: all 1s ease;
