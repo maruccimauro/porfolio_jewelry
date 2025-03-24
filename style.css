@@ -140,6 +140,11 @@ ul {
     -webkit-transition: all 1s ease;
 }
 
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
 .nav-link:hover {
     color: brown;
     border-bottom: 1px solid goldenrod;
