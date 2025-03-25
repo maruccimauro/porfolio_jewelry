@@ -485,6 +485,8 @@ ul {
     background-color: #f7f7f7;
     margin-top: 6rem;
     padding: 5rem;
+    display: flex;
+    justify-content: center;
 }
 .personalized .row {
     justify-content: center;
@@ -492,7 +494,7 @@ ul {
     text-align: center;
 }
 .personalized .left-panel {
-    padding: 50px 5vw 50px 5vw;
+    padding: 50px 50px 50px 50px;
     text-align: start;
 }
 
