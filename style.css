@@ -597,7 +597,7 @@ ul {
 /* footer */
 
 .footer {
-    text-align: center;
+    text-align: start;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -610,8 +610,14 @@ ul {
 
 .footer .panel {
     margin-top: 3rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.199);
+    border-right: 1px solid rgba(0, 0, 0, 0.199);
+}
+.footer .panel ul {
+    padding: 0px;
 }
 .footer h3 {
+    justify-self: center;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.637);
 }
