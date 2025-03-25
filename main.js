@@ -6,12 +6,12 @@ function createScrollMoveButtons(panelID, scrollLeftID, scrollRightID) {
     const scrollAmount = 350;
 
     scrollRightBtn.addEventListener("click", () => {
-        const maxScrollLeft = scrollPanel.scrollWidth - scrollPanel.clientWidth; // Límite máximo
+        const maxScrollLeft = scrollPanel.scrollWidth - scrollPanel.clientWidth;
 
         if (scrollPanel.scrollLeft + scrollAmount <= maxScrollLeft) {
             scrollPanel.scrollLeft += scrollAmount;
         } else {
-            scrollPanel.scrollLeft = maxScrollLeft; // Fijar el scroll al máximo posible
+            scrollPanel.scrollLeft = maxScrollLeft;
         }
     });
 
@@ -19,7 +19,7 @@ function createScrollMoveButtons(panelID, scrollLeftID, scrollRightID) {
         if (scrollPanel.scrollLeft - scrollAmount >= 0) {
             scrollPanel.scrollLeft -= scrollAmount;
         } else {
-            scrollPanel.scrollLeft = 0; // Fijar el scroll al inicio
+            scrollPanel.scrollLeft = 0;
         }
     });
 }

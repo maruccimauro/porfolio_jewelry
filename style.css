@@ -308,6 +308,7 @@ ul {
 }
 
 .scroll-list-control {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,15 +318,21 @@ ul {
     box-shadow: 0px 20px 20px -30px rgba(0, 0, 0, 0.37);
 }
 
-.scroll-list-control i {
+.pre-scroll-list-panel {
     display: flex;
+    flex-direction: row;
+}
+
+.pre-scroll-list-panel i {
+    align-self: center;
+    display: flex;
+    margin: 0px 1rem;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     color: black;
     font-size: 2rem;
-
     transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
@@ -333,12 +340,22 @@ ul {
     -o-transition: all 0.3s ease-in;
     border: 1px solid rgba(218, 165, 32, 0.226);
 }
-.scroll-list-control i:hover {
+.pre-scroll-list-panel i:hover {
     color: rgb(161, 122, 23);
     border: 1px solid transparent;
     filter: drop-shadow(2px 0px 4px rgba(0, 0, 0, 0.048));
     -webkit-filter: drop-shadow(2px 0px 4px rgba(0, 0, 0, 0.048));
 }
+
+.scroll-list-panel .left-carousel-button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: tomato;
+    padding: 10px;
+}
+
 .scroll-list-control img {
     width: 50px;
     height: 40px;
@@ -348,13 +365,19 @@ ul {
     display: flex;
     width: 100%;
     overflow-x: auto;
-    /* background-color: rgb(218, 165, 32); */
-    padding: 0rem 5rem 3rem 0rem;
-    /* scroll-snap-type: x mandatory; */
+    background-color: rgba(218, 165, 32, 0.021);
+    padding: 0rem 1rem 3rem 0rem;
+    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Para navegadores de Microsoft (IE, Edge) */
+    scrollbar-width: none; /* Para Firefox */
 }
 
+/* Para ocultar la barra de desplazamiento en Webkit (Chrome, Safari) */
 .scroll-list-panel::-webkit-scrollbar {
+    display: none;
+}
+/* .scroll-list-panel::-webkit-scrollbar {
     height: 5px;
 }
 
@@ -370,7 +393,7 @@ ul {
 
 .scroll-list-panel::-webkit-scrollbar-thumb:hover {
     background: rgb(233, 177, 34);
-}
+} */
 .horizontal-products-list .card-body {
     /*background-color: aliceblue;
     */
