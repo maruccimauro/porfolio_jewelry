@@ -372,6 +372,15 @@ ul {
     -ms-overflow-style: none; /* Para navegadores de Microsoft (IE, Edge) */
     scrollbar-width: none; /* Para Firefox */
 }
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: black;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+}
 
 /* Para ocultar la barra de desplazamiento en Webkit (Chrome, Safari) */
 .scroll-list-panel::-webkit-scrollbar {
