@@ -347,15 +347,6 @@ ul {
     -webkit-filter: drop-shadow(2px 0px 4px rgba(0, 0, 0, 0.048));
 }
 
-.scroll-list-panel .left-carousel-button {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    background-color: tomato;
-    padding: 10px;
-}
-
 .scroll-list-control img {
     width: 50px;
     height: 40px;
@@ -705,6 +696,13 @@ footer a {
     .personalized img {
         max-width: 360px;
     }
+    .scroll-list-panel {
+        padding: 0rem 0rem 3rem 0rem;
+    }
+    .pre-scroll-list-panel i {
+        margin: 0px;
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -719,7 +717,14 @@ footer a {
     .personalized {
         max-width: 94vw;
     }
+
+    .card-body {
+        max-width: 225px;
+    }
+    .top-body img {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 430px) {
 }
